@@ -1,4 +1,4 @@
-import ProductShop from "../ProductShop/PRoductShop";
+import ProductShop from "../ProductShop/ProductShop";
 import "./BestSeller.css";
 
 const BestSeller = () => {
