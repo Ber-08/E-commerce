@@ -19,28 +19,28 @@ export default function NavBar() {
         <div className={link ? "n-links flexStart  innerWidth active" : "n-links flexStart innerWidth "}>
           <ul className="flexCenter">
             <li>
-              <a href="#">Home</a>
+              <a href="5">Home</a>
             </li>
             <li>
-              <a href="#">Shop</a>
+              <a href="6">Shop</a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="7">About Us</a>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <a href="8">Blog</a>
             </li>
             <li>
-              <a href="#">Contact Us</a>
+              <a href="9">Contact Us</a>
             </li>
             <li>
-              <a href="#">Cart page</a>
+              <a href="10">Cart page</a>
             </li>
           </ul>
           <div className="n-contact flexCenter">
             <BiSearch onClick={() => setSearch(true)} style={{ cursor: "pointer" }} />
             <BiShoppingBag />
-            <a href="#">login</a>
+            <a href="11">login</a>
           </div>
         </div>
 
@@ -51,17 +51,13 @@ export default function NavBar() {
           </div>
 
           <BiShoppingBag />
-          <a href="#">login</a>
+          <a href="12">login</a>
           <div onClick={() => setLink((cur) => !cur)}>
             <GiHamburgerMenu />
           </div>
         </div>
       </nav>
-      {/* <Media query="(max-width:1024px)">
-        {(matches) => {
-          matches && setSearch(false);
-        }}
-      </Media> */}
+
       {search && (
         <OutsideClickHandler onOutsideClick={() => setSearch(false)}>
           <div className="n-searchContainer">

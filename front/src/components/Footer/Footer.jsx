@@ -13,16 +13,16 @@ const Footer = () => {
             Help is here. Whenever and however you need it.Essentials that pair perfectly with your favourite devices.
           </p>
           <div className="f-links flexCenter">
-            <a href="#">
+            <a href="1">
               <BiLogoFacebook />
             </a>
-            <a href="#">
+            <a href="2">
               <BiLogoInstagramAlt />
             </a>
-            <a href="#">
+            <a href="3">
               <BiLogoLinkedinSquare />
             </a>
-            <a href="#">
+            <a href="4">
               <BiLogoTwitter />
             </a>
           </div>
