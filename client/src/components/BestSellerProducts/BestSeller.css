@@ -1,0 +1,37 @@
+.seller-wrapper {
+  width: 100%;
+  margin-top: 75px;
+}
+
+.seller-wrapper .header {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.seller-wrapper .header h1 {
+  font-size: 3vw;
+}
+
+.seller-wrapper .product-card {
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  row-gap: 1rem;
+}
+
+@media (max-width: 800px) {
+  .seller-wrapper .header h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .seller-wrapper .header {
+    margin-bottom: 2rem;
+  }
+  .seller-wrapper .header h1 {
+    font-size: 30px;
+  }
+  .seller-wrapper .header p {
+    font-size: 12px;
+  }
+}

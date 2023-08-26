@@ -1,0 +1,11 @@
+.sp-image-container {
+  justify-content: space-between !important;
+  padding: 2rem;
+  background-color: var(--clr-gray);
+  margin-top: 75px;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+}
+.sp-image-container > img {
+  width: 100px;
+}

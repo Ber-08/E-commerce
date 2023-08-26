@@ -1,0 +1,32 @@
+.s-wrapper .s-container {
+  width: 350px;
+  position: relative;
+  z-index: 10;
+}
+.s-wrapper .s-container input {
+  width: 100%;
+  height: 35px;
+  padding: 2% 10%;
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
+}
+.s-wrapper .s-container .s-s-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+}
+.s-wrapper .s-container .s-a-icon {
+  position: absolute;
+  top: 50%;
+  right: 0.5px;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 30px;
+  background: transparent;
+  border-radius: 0.2rem;
+  color: var(--clr-font-white);
+  background: var(--clr-btn-bg);
+  border: none;
+}

@@ -1,0 +1,43 @@
+.h-wrapper {
+  width: 100%;
+}
+.h-wrapper .h-container {
+  background: var(--clr-gray);
+  border-radius: 2rem;
+  position: relative;
+  padding: 2rem;
+  height: 100%;
+}
+
+.h-wrapper .h-container img {
+  width: 75%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.h-wrapper .h-container .h-banner-heading {
+  position: absolute;
+  top: 50%;
+  left: 18%;
+  transform: translateY(-50%);
+}
+.hai {
+  position: absolute;
+  top: 80%;
+  left: 18%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.h-wrapper .h-container .h-banner-heading h4 {
+  font-size: 3vw;
+}
+.h-wrapper .h-container .h-banner-heading h4 span {
+  font-size: 5vw;
+  line-height: 0;
+}
+.h-wrapper .h-container .h-banner-heading h1 {
+  font-size: 10vw;
+  color: var(--clr-font-white);
+}

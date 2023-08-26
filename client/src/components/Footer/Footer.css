@@ -1,0 +1,101 @@
+.f-wrapper {
+  width: 100%;
+}
+.f-wrapper .f-container {
+  display: grid;
+  padding: 2rem;
+}
+.f-wrapper .f-container .f-logo {
+  gap: 1rem;
+  grid-area: one;
+  padding: 1rem;
+}
+.f-wrapper .f-container .f-logo .f-links {
+  gap: 1rem;
+}
+.f-wrapper .f-container .f-contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-area: two;
+  padding: 2rem;
+}
+
+.f-wrapper .f-container .f-subscribe {
+  align-items: end;
+  gap: 1rem;
+  grid-area: three;
+  padding: 2rem;
+}
+.f-wrapper .f-container .f-subscribe .f-mailBox {
+  position: relative;
+}
+.f-wrapper .f-container .f-subscribe .f-mailBox input {
+  padding: 0.7rem;
+  padding-right: 100px;
+  border-radius: 3rem;
+  width: 320px;
+}
+
+.f-wrapper .f-container .f-subscribe .f-mailBox :nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+@media (max-width: 1500px) {
+  .f-wrapper .f-container {
+    grid-template-areas: "one two three";
+  }
+}
+@media (max-width: 1030px) {
+  .f-wrapper .f-container {
+    grid-template-areas:
+      "one two"
+      "three";
+  }
+}
+@media (max-width: 780px) {
+  .f-wrapper {
+    margin-top: 75px;
+    padding: 0 !important;
+  }
+  .f-wrapper .f-container {
+    padding: 0;
+
+    grid-template-areas:
+      "one"
+      "two"
+      "three";
+  }
+  .f-wrapper .f-container .f-subscribe {
+    align-items: center;
+  }
+  .f-wrapper .f-container .f-subscribe .f-mailBox input {
+    padding: 0.7rem;
+  }
+}
+@media (max-width: 500px) {
+  .f-wrapper .f-container {
+    grid-template-areas:
+      "one"
+      "two"
+      "three";
+  }
+  .f-wrapper .f-container .f-subscribe {
+    align-items: center;
+  }
+  .f-wrapper .f-container .f-subscribe .f-mailBox input {
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 385px) {
+  .f-wrapper .f-container {
+    grid-template-areas:
+      "one"
+      "two"
+      "three";
+  }
+  .f-wrapper .f-container .f-subscribe {
+    align-items: center;
+  }
+}

@@ -1,0 +1,105 @@
+.card-wrapper {
+  width: 100%;
+  margin-top: 250px;
+}
+.card-wrapper .card-container {
+  background-color: var(--clr-red);
+  border-radius: 2rem;
+  padding: 5rem 5rem;
+  position: relative;
+}
+
+.card-wrapper .card-container img {
+  position: absolute;
+  top: -40%;
+  left: 20%;
+  z-index: 0;
+}
+.card-wrapper .card-container .card-banner {
+  color: var(--clr-font-white);
+  display: grid;
+  grid-template-columns: 60% auto;
+  grid-column-gap: 6rem;
+}
+.card-wrapper .card-container .card-banner .card-banner-left,
+.card-wrapper .card-container .card-banner .card-banner-right {
+  z-index: 2;
+}
+
+.card-wrapper .card-container .card-banner .card-banner-left p {
+  font-weight: 900;
+  margin: 7px;
+}
+.card-wrapper .card-container .card-banner .card-banner-left h1 {
+  font-size: 8.5vw;
+  line-height: 0.8;
+}
+
+.card-wrapper .card-container .card-banner .card-banner-right p:nth-child(1) {
+  font-size: 2.6rem;
+  font-weight: 400;
+}
+.card-wrapper .card-container .card-banner .card-banner-right h3 {
+  font-size: 1.5rem;
+}
+.card-wrapper .card-container .card-banner .card-banner-right p:nth-child(3) {
+  font-size: 1rem;
+  margin: 20px 0;
+  letter-spacing: 0;
+}
+
+@media (max-width: 1030px) {
+  .card-wrapper {
+    margin-top: 200px;
+  }
+  .card-wrapper .card-container img {
+    top: -45%;
+  }
+  .card-wrapper .card-container .card-banner .card-banner-right p:nth-child(1) {
+    font-size: 1.6rem;
+  }
+  .card-wrapper .card-container .card-banner .card-banner-right h3 {
+    font-size: 1.2rem;
+  }
+  .card-wrapper .card-container .card-banner .card-banner-right p:nth-child(3) {
+    font-size: 0.8rem;
+    margin: 20px 0;
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 770px) {
+  .card-wrapper {
+    margin-top: 150px;
+  }
+  .card-wrapper .card-container {
+    padding: 3rem 5rem;
+  }
+  .card-wrapper .card-container img {
+    top: -35%;
+    left: 15%;
+  }
+
+  .card-wrapper .card-container .card-banner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card-wrapper .card-container .card-banner .card-banner-left {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .card-wrapper {
+    margin-top: 50px;
+    padding: 0 2rem !important;
+  }
+
+  .card-wrapper .card-container {
+    padding-top: 10rem;
+  }
+
+  .card-wrapper .card-container img {
+    width: 70%;
+    top: -15%;
+  }
+}

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap");
+:root {
+  /* color */
+  --clr-gray: #d5d3d5;
+  --clr-dark-gray: rgb(66, 66, 66);
+  --clr-yellow: rgb(255, 200, 0);
+  --clr-red: #ec2e35;
+  --clr-green: #03c03c;
+  --clr-blue: #0039a6;
+  --primary-font-color: #767676;
+  --clr-font-white: rgb(241, 239, 239);
+  --clr-btn-bg: #ec2e35;
+  /* font family */
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-font-color);
+}
+
+li {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-poppins);
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexStart {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.flexColStart {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flexColCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.innerWidth {
+  width: 100%;
+}
+
+.paddings {
+  padding: 2rem;
+}
+
+.app {
+  width: 100%;
+}/*# sourceMappingURL=index.css.map */
