@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import "./ProductCard.css";
 import Button from "./../Buttons/Button";
 

@@ -45,7 +45,6 @@ export default function NavBar() {
         </div>
 
         <div className="n-hamBurger flexCenter">
-          {/* <Search /> */}
           <div className="n-ham-search flexCenter">
             <BiSearch onClick={() => setSearch(true)} style={{ cursor: "pointer" }} />
           </div>

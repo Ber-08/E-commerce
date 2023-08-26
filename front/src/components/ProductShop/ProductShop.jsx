@@ -1,5 +1,4 @@
 import "./ProductShop.css";
-/* eslint-disable react/prop-types */
 const ProductShop = ({ el }) => {
   return (
     <div className="single-product flexColStart" key={el.id}>

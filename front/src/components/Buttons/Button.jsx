@@ -1,6 +1,5 @@
 import "./Button.css";
 
-// eslint-disable-next-line react/prop-types
 export default function Button({ name, className, bgColor = "var(--clr-btn-bg)" }) {
   return (
     <div className={`btn-container ${className}`}>

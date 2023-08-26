@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import Button from "../Buttons/Button";
 import "./Card.css";
 const Card = ({ card }) => {

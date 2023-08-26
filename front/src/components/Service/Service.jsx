@@ -1,5 +1,4 @@
 import "./Service.css";
-// eslint-disable-next-line react/prop-types
 const Service = () => {
   const service = [
     {
