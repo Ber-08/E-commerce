@@ -17,26 +17,28 @@ export default function NavBar() {
           <Logo />
         </div>
         <div className={link ? "n-links flexStart  innerWidth active" : "n-links flexStart innerWidth "}>
-          <ul className="flexCenter">
-            <li>
-              <a href="5">Home</a>
-            </li>
-            <li>
-              <a href="6">Shop</a>
-            </li>
-            <li>
-              <a href="7">About Us</a>
-            </li>
-            <li>
-              <a href="8">Blog</a>
-            </li>
-            <li>
-              <a href="9">Contact Us</a>
-            </li>
-            <li>
-              <a href="10">Cart page</a>
-            </li>
-          </ul>
+          <OutsideClickHandler onOutsideClick={() => setLink(false)}>
+            <ul className="flexCenter">
+              <li>
+                <a href="5">Home</a>
+              </li>
+              <li>
+                <a href="6">Shop</a>
+              </li>
+              <li>
+                <a href="7">About Us</a>
+              </li>
+              <li>
+                <a href="8">Blog</a>
+              </li>
+              <li>
+                <a href="9">Contact Us</a>
+              </li>
+              <li>
+                <a href="10">Cart page</a>
+              </li>
+            </ul>
+          </OutsideClickHandler>
           <div className="n-contact flexCenter">
             <BiSearch onClick={() => setSearch(true)} style={{ cursor: "pointer" }} />
             <BiShoppingBag />
